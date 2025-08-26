@@ -1,3 +1,8 @@
+/*
+Author: Danna Sofía Naranjo 
+Date: 26 - 08 - 25
+Description: Basic calculator
+*/
 #include <iostream>
 
 using namespace std;
