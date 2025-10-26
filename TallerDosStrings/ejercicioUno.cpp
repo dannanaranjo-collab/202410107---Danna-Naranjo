@@ -39,11 +39,11 @@ void userVerify() {
         cout << "Nombre de usuario valido" << endl;
     } else {
         cout << "No cumple las condiciones:" << endl;
-        if (large)
+        if (!large)
             cout << "Debe tener entre 6 y 12 caracteres." << endl;
-        if (letterStart)
+        if (!letterStart)
             cout << "Debe empezar con una letra." << endl;
-        if (noSpace)
+        if (!noSpace)
             cout << "No debe tener espacios." << endl;
     }
 }
