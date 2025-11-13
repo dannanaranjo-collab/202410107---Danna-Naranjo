@@ -21,7 +21,6 @@ void getNewSales(string *&names, int *&values, int &sales) {
 void printSales(string *names, int *values, int sales) {
     if (sales == 0) {
         cout << "No se han registrado ventas :(";
-        return;
     }
     cout << "Lista actual de ventas:";
     for (int i = 0; i < sales; i++) {
@@ -34,7 +33,6 @@ void modifySale(string *names, int *values, int sales) {
     string search;
     if (sales == 0) {
         cout << "No hay ventas para modificar"<<endl;
-        return;
     }
 
     cout << "Ingrese el nombre de la venta a modificar: ";
@@ -46,7 +44,6 @@ void modifySale(string *names, int *values, int sales) {
             cout << "Ingrese el nuevo valor: ";
             cin >> values[i];
             cout << "Venta modificada correctamente :)"<<endl;
-            return;
         }
     }
     cout << "No se encontro una venta con ese nombre"<<endl;
@@ -59,7 +56,6 @@ void findSale(string *names, int *values, int sales) {
 
     if (sales == 0) {
         cout << "No hay ventas registradas"<<endl;
-        return;
     }
 
     cout << "Ingrese el nombre de la venta : ";
@@ -68,7 +64,6 @@ void findSale(string *names, int *values, int sales) {
     for (int i = 0; i < sales; i++) {
         if (names[i] == search) {
             cout << "Venta encontrada : " << names[i] << " = " << values[i] << endl;
-            return;
         }
     }
     cout << "No hay ventas con ese nombre"<<endl;
@@ -81,7 +76,6 @@ void salesInRange(string *names, int *values, int sales) {
 
     if (sales == 0) {
         cout << "No hay ventas registradas"<<endl;
-        return;
     }
 
 
@@ -107,7 +101,6 @@ void salesInRange(string *names, int *values, int sales) {
 void calculateTotal(int *values, int sales) {
     if (sales == 0) {
         cout << "No hay ventas registradas"<<endl;
-        return;
     }
 
     int total = 0;
